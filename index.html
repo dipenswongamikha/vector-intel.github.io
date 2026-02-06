@@ -1,75 +1,328 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Vector Intelligence | Machine-Speed Operations</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', system-ui; background: #0a0a0a; color: #00ff9d; line-height: 1.6; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
-        header { text-align: center; padding: 60px 20px; border-bottom: 1px solid #333; }
-        h1 { font-size: 3.5em; margin-bottom: 10px; background: linear-gradient(90deg, #00ff9d, #00b8ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .tagline { font-size: 1.2em; color: #888; margin-bottom: 30px; }
-        .cta { display: inline-block; background: #00ff9d; color: #000; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; margin: 20px 0; }
-        .section { padding: 60px 20px; border-bottom: 1px solid #222; }
-        h2 { color: #00b8ff; margin-bottom: 30px; font-size: 2em; }
-        .case-study { background: #111; padding: 25px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #00ff9d; }
-        .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin: 10px 0; background: #111; border: 1px solid #333; color: white; border-radius: 5px; }
-        footer { text-align: center; padding: 40px 20px; color: #666; font-size: 0.9em; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vector Intel - Advanced AI-powered intelligence and analytics solutions">
+    <title>Vector Intel | AI-Powered Intelligence Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>VECTOR INTELLIGENCE</h1>
-        <p class="tagline">Operational clarity at machine speed. 48-hour diagnostics. Quantified results.</p>
-        <a href="#contact" class="cta">Request 48-Hour Diagnostic</a>
-    </header>
-
-    <div class="container">
-        <section class="section">
-            <h2>The Process</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-                <div class="case-study">
-                    <h3>Day 1-2: Deep Diagnostic</h3>
-                    <p>We analyze your operational data using proprietary systems. You receive specific, actionable insights.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 2L2 10L16 18L30 10L16 2Z" fill="#00D9FF"/>
+                        <path d="M2 22L16 30L30 22L16 14L2 22Z" fill="#0099FF" opacity="0.7"/>
+                    </svg>
+                    <span>Vector Intel</span>
                 </div>
-                <div class="case-study">
-                    <h3>Day 3-5: Implementation Plan</h3>
-                    <p>Step-by-step roadmap with quantified outcomes. No vague advice - only executable actions.</p>
-                </div>
-                <div class="case-study">
-                    <h3>Day 6-30: Execution & Optimization</h3>
-                    <p>We guide implementation and track results. You see measurable impact within 30 days.</p>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#solutions" class="nav-link">Solutions</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="cta-button">Get Started</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section class="section">
-            <h2>Sample Analysis</h2>
-            <div class="case-study">
-                <h3>Logistics Optimization | Regional 3PL</h3>
-                <p><strong>Problem:</strong> 22% excess fleet utilization, inconsistent routing</p>
-                <p><strong>Solution:</strong> Dynamic routing algorithm + load optimization</p>
-                <p><strong>Result:</strong> $417K annual savings, 15% improved delivery times</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">AI-Powered Intelligence</span>
+                    <br>for the Modern Enterprise
+                </h1>
+                <p class="hero-subtitle">
+                    Transform your data into actionable insights with Vector Intel's 
+                    cutting-edge AI analytics platform
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Start Free Trial</button>
+                    <button class="btn btn-secondary">Watch Demo</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Enterprise Clients</p>
+                    </div>
+                    <div class="stat">
+                        <h3>99.9%</h3>
+                        <p>Uptime Guarantee</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Expert Support</p>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="section">
-            <h2>Request Diagnostic</h2>
-            <p style="margin-bottom: 20px;">We're accepting 3 pilot clients at $1,500 for the 48-hour diagnostic (normally $7,500).</p>
-            <form class="contact-form" action="https://formsubmit.co/your-vector-email@proton.me" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="company" placeholder="Company" required>
-                <textarea name="problem" placeholder="What's your single biggest operational pain point? (Be specific)" rows="3" required></textarea>
-                <button type="submit" style="background: #00ff9d; color: black; padding: 15px 30px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">Submit Request</button>
-            </form>
-        </section>
-    </div>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need to make data-driven decisions</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5L5 15L20 25L35 15L20 5Z" stroke="#00D9FF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Real-time Analytics</h3>
+                    <p>Process and analyze data streams in real-time with our advanced AI engine</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="5" y="5" width="30" height="30" rx="4" stroke="#00D9FF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Predictive Modeling</h3>
+                    <p>Forecast trends and outcomes using machine learning algorithms</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="15" stroke="#00D9FF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Custom Dashboards</h3>
+                    <p>Build personalized visualizations tailored to your business needs</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 20L20 10L30 20L20 30L10 20Z" stroke="#00D9FF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>Bank-level encryption and compliance with industry standards</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 10V30M10 20H30" stroke="#00D9FF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Seamless Integration</h3>
+                    <p>Connect with over 100+ tools and platforms effortlessly</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M15 15L25 25M25 15L15 25" stroke="#00D9FF" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>API Access</h3>
+                    <p>Full API documentation for custom integrations and automation</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>Vector Intelligence | alex.vector@proton.me</p>
-        <p style="margin-top: 10px; font-size: 0.8em;">© 2024 | Machine-speed operations consulting</p>
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industry Solutions</h2>
+                <p>Tailored intelligence for every sector</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-image">
+                        <div class="placeholder-img">📊</div>
+                    </div>
+                    <h3>Financial Services</h3>
+                    <p>Risk assessment, fraud detection, and market analysis powered by AI</p>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-image">
+                        <div class="placeholder-img">🏥</div>
+                    </div>
+                    <h3>Healthcare</h3>
+                    <p>Patient data analytics, predictive diagnostics, and operational efficiency</p>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-image">
+                        <div class="placeholder-img">🛒</div>
+                    </div>
+                    <h3>Retail & E-commerce</h3>
+                    <p>Customer behavior analysis, inventory optimization, and sales forecasting</p>
+                    <a href="#" class="learn-more">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Vector Intel</h2>
+                    <p>Founded in 2020, Vector Intel is at the forefront of AI-powered business intelligence. Our mission is to democratize advanced analytics and make sophisticated AI tools accessible to organizations of all sizes.</p>
+                    <p>With a team of world-class data scientists, engineers, and industry experts, we're building the future of intelligent decision-making.</p>
+                    <div class="about-values">
+                        <div class="value">
+                            <h4>🎯 Innovation</h4>
+                            <p>Pushing the boundaries of AI technology</p>
+                        </div>
+                        <div class="value">
+                            <h4>🤝 Trust</h4>
+                            <p>Security and privacy at our core</p>
+                        </div>
+                        <div class="value">
+                            <h4>🚀 Excellence</h4>
+                            <p>Delivering exceptional results</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="stats-card">
+                        <div class="stat-item">
+                            <h3>98%</h3>
+                            <p>Customer Satisfaction</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>150+</h3>
+                            <p>Countries Served</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>$2B+</h3>
+                            <p>Value Generated</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to transform your business with AI? Let's talk.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@vectorintel.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📞</span>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Company">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vector Intel</h3>
+                    <p>AI-powered intelligence for the modern enterprise</p>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vector Intel. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
